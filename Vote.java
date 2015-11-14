@@ -1,4 +1,5 @@
-import java.lang.*;
+import java.sql.*;
+
 public class Vote implements Comparable<Vote>
 {
     String name;
@@ -10,27 +11,27 @@ public class Vote implements Comparable<Vote>
     orientation = o;
     time = t;
     }
-    public static String getName()
+    public String getName()
     {
         return name;
     }
-    public static int getVote()
+    public int getVote()
     {
         return orientation;
     }
-    public static Timestamp getTimestamp()
+    public Timestamp getTimestamp()
     {
         return time;
     }
-    public static void setVote(int newO)
+    public void setVote(int newO)
     {
         orientation = newO;
     }
-    public static void setTime(Timestamp newT)
+    public void setTime(Timestamp newT)
     {
         time = newT;
     }
-    public static compareTo(Vote v)
+    public int compareTo(Vote v)
     {
         return time.compareTo(v.getTimestamp());
     }
