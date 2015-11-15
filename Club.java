@@ -14,6 +14,7 @@ public class Club {
     //private int numFriends;
     
     public Club (ArrayList<Vote> v, String n, String h, String t, boolean e, boolean io, String m, int np){
+        votepq = new PriorityQueue<Vote>();
         for (int i = 0; i < v.size(); i++)
         {
             votepq.add(v.get(i));
@@ -108,14 +109,25 @@ public class Club {
         return name+hours+theme+entry+isOpen+music+numPeople;
     }
 
-    public static void main (String[] args){
+    public static void main (String[] args) throws FileNotFoundException{
         // random test
         Timestamp t1 = new Timestamp(10000000);
+        Timestamp t2 = new Timestamp(20000000);        
         Vote a = new Vote("Bob", 1, t1);
+        Vote b = new Vote("Sid", -1, t2);
+
         ArrayList<Vote> chartervotes = new ArrayList<Vote>();
         chartervotes.add(a);
+        chartervotes.add(b);
         Club club = new Club(chartervotes, "Charter", "12-1","Charter Friday", false, false, "Live music", 0);
         System.out.println(club);
+        System.out.println();
+
+        Scanner infile = new Scanner(club.toTextFile());
+        while (infile.hasNextLine())
+        {
+            System.out.println(infile.nextLine());
+        }
         
 
     }
