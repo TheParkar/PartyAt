@@ -1,5 +1,6 @@
+package com.siddarth.partyat;
 import java.util.*;
-import java.sql.*;
+import java.sql.*; // timestamp
 import java.io.*;
 
 public class Club {
@@ -34,6 +35,7 @@ public class Club {
         votepq.add(v);
         numPeople++;
     }
+    // get vote count (net up/down) of each club
     public int getVoteCount(){
         int votecount = 0;
         Vote[] votecountarr = new Vote[votepq.size()];
@@ -82,6 +84,7 @@ public class Club {
         numPeople = np;
     }
 
+    // priority queue to text file
     public File toTextFile() throws FileNotFoundException{
         File fileout = new File(getName()+".txt");
         //try{
@@ -111,8 +114,8 @@ public class Club {
 
     public static void main (String[] args) throws FileNotFoundException{
         // random test
-        Timestamp t1 = new Timestamp(10000000);
-        Timestamp t2 = new Timestamp(20000000);        
+        long t1 = 10000000;
+        long t2 = 20000000;
         Vote a = new Vote("Bob", 1, t1);
         Vote b = new Vote("Sid", -1, t2);
 
@@ -123,6 +126,7 @@ public class Club {
         System.out.println(club);
         System.out.println();
 
+        // test of toTextFile()
         Scanner infile = new Scanner(club.toTextFile());
         while (infile.hasNextLine())
         {

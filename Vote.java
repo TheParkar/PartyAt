@@ -1,12 +1,14 @@
-import java.sql.*;
+package com.siddarth.partyat;
+import java.sql.*;  // timestamp
 import java.lang.*;
 
+// vote object, part of PQ
 public class Vote implements Comparable<Vote>
 {
     String name;
     int orientation;
-    Timestamp time;
-    public Vote(String n, int o, Timestamp t)
+    long time;
+    public Vote(String n, int o, long t)
     {
     name = n;
     orientation = o;
@@ -20,7 +22,7 @@ public class Vote implements Comparable<Vote>
     {
         return orientation;
     }
-    public Timestamp getTimestamp()
+    public long getTime()
     {
         return time;
     }
@@ -28,13 +30,13 @@ public class Vote implements Comparable<Vote>
     {
         orientation = newO;
     }
-    public void setTime(Timestamp newT)
+    public void setTime(long newT)
     {
         time = newT;
     }
     public int compareTo(Vote v)
     {
-        return time.compareTo(v.getTimestamp());
+        return (int)(time - v.getTime()); // check the priority
     }
     public String toString()
     {
@@ -45,8 +47,5 @@ public class Vote implements Comparable<Vote>
     {
         String n = "bob";
         int o = 1;
-        Timestamp t = new Timestamp(0);
-        Vote v1 = new Vote(n, o, t);
-        System.out.println(v1);
     }
 }
