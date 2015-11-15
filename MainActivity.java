@@ -238,7 +238,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = terrace.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     terrace.votepq.remove();
                 upvote1.setEnabled(false);
                 downvote1.setEnabled(true);
@@ -275,7 +275,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = terrace.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     terrace.votepq.remove();
                 upvote1.setEnabled(true);
                 downvote1.setEnabled(false);
@@ -316,7 +316,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = cap.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     cap.votepq.remove();
                 upvote2.setEnabled(false);
                 downvote2.setEnabled(true);
@@ -353,7 +353,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = cap.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     cap.votepq.remove();
                 upvote2.setEnabled(true);
                 downvote2.setEnabled(false);
@@ -394,7 +394,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = cloister.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     cloister.votepq.remove();
                 upvote3.setEnabled(false);
                 downvote3.setEnabled(true);
@@ -431,7 +431,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = cloister.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     cloister.votepq.remove();
                 upvote3.setEnabled(true);
                 downvote3.setEnabled(false);
@@ -471,7 +471,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = cannon.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     cannon.votepq.remove();
                 upvote4.setEnabled(false);
                 downvote4.setEnabled(true);
@@ -507,7 +507,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = cannon.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     cannon.votepq.remove();
                 upvote4.setEnabled(true);
                 downvote4.setEnabled(false);
@@ -547,7 +547,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = ti.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     ti.votepq.remove();
                 upvote5.setEnabled(false);
                 downvote5.setEnabled(true);
@@ -584,7 +584,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = ti.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     ti.votepq.remove();
                 upvote5.setEnabled(true);
                 downvote5.setEnabled(false);
@@ -625,7 +625,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = ivy.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     ivy.votepq.remove();
                 upvote6.setEnabled(false);
                 downvote6.setEnabled(true);
@@ -662,7 +662,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = ivy.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     ivy.votepq.remove();
                 upvote6.setEnabled(true);
                 downvote6.setEnabled(false);
@@ -703,7 +703,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = cottage.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     cottage.votepq.remove();
                 upvote7.setEnabled(false);
                 downvote7.setEnabled(true);
@@ -740,7 +740,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = cottage.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     cottage.votepq.remove();
                 upvote7.setEnabled(true);
                 downvote7.setEnabled(false);
@@ -781,7 +781,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = colonial.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     colonial.votepq.remove();
                 upvote8.setEnabled(false);
                 downvote8.setEnabled(true);
@@ -818,7 +818,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = colonial.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     colonial.votepq.remove();
                 upvote8.setEnabled(true);
                 downvote8.setEnabled(false);
@@ -859,7 +859,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = quad.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     quad.votepq.remove();
                 upvote9.setEnabled(false);
                 downvote9.setEnabled(true);
@@ -896,7 +896,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = quad.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     quad.votepq.remove();
                 upvote9.setEnabled(true);
                 downvote9.setEnabled(false);
@@ -937,7 +937,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = charter.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     charter.votepq.remove();
                 upvote10.setEnabled(false);
                 downvote10.setEnabled(true);
@@ -973,7 +973,7 @@ final String ID = "Bob";
             public void onClick(View v)
             {
                 Vote recent = charter.votepq.peek();
-                if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     charter.votepq.remove();
                 upvote10.setEnabled(true);
                 downvote10.setEnabled(false);
@@ -1012,7 +1012,7 @@ final String ID = "Bob";
             @Override
             public void onClick(View v) {
                 Vote recent = tower.votepq.peek();
-                if (recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+                if (recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                     tower.votepq.remove();
                 upvote11.setEnabled(false);
                 downvote11.setEnabled(true);
@@ -1049,7 +1049,7 @@ final String ID = "Bob";
         public void onClick(View v)
         {
             Vote recent = tower.votepq.peek();
-            if(recent.getTime() * 10 * 10 * 10 - System.currentTimeMillis() > 7.2e12)
+            if(recent.getTime() * 1000 - System.currentTimeMillis() > 7.2e12)
                 tower.votepq.remove();
             upvote11.setEnabled(true);
             downvote11.setEnabled(false);
